@@ -2,6 +2,9 @@ import cv2 as cv
 
 import numpy as np
 
+import pathlib
+ 
+
 class InferenceCapture():
 
     def __init__(self):
@@ -12,7 +15,7 @@ class InferenceCapture():
 
         print("")
 
-        base = r"/Users/gsbezerra/source/FIAP-DIOT-25MOB/AULA03/exercicios/4.objectdetection"
+        base = "./"
         yolocfg = base + r'yolo/yolov3-tiny.cfg'
         yoloweight = base + r'yolo/yolov3-tiny.weights'
         labelsPath = base + r'yolo/coco-pt.names'
